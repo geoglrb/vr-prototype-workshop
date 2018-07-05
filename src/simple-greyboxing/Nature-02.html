@@ -1,0 +1,158 @@
+<html>
+
+<head>
+  <title>Simple World Series 1: Park</title>
+</head>
+
+<body>
+  <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+
+  <!-- Concepts Covered
+        1. Importing external 3D models
+        2. Translation
+        3. Rotation
+        4. Creating multiple instances (this can be shortened -
+            have same scene with reusable components)
+        5. Sky & Terrain
+        6. Camera
+        7. Lighting
+  -->
+
+    <a-scene>
+      <a-entity light="type: spot; angle: 19;"
+          rotation="0 158.71 0">
+      </a-entity>
+
+      <a-ring
+        color="teal"
+        radius-inner="0.5"
+        radius-outer="20"
+        rotation="-90 0 0">
+      </a-ring>
+
+      <a-entity id="outdoors">
+        <a-plane id="grass-terrain"
+          height="200"
+          width="200"
+          color="#82AA59"
+          position="0 -0.01 0"
+          rotation="-90 0 0">
+        </a-plane>
+
+      <a-sky
+          color="#232A34">
+      </a-sky>
+
+      <a-collada-model
+        id="tall-tree-1"
+        src="../assets/3D/treeTall.dae"
+        position="-29.47 0 -10.02">
+      </a-collada-model>
+
+      <a-collada-model
+        id="tall-tree-2"
+        src="../assets/3D/treeTall.dae"
+        position="-21.56 0 -10.82">
+      </a-collada-model>
+
+      <a-collada-model
+        id="tall-tree-3"
+        src="../assets/3D/treeTall.dae"
+        position="6.83 0 -24.76">
+      </a-collada-model>
+
+      <a-collada-model
+        id="tall-tree-4"
+        src="../assets/3D/treeTall.dae"
+        position="11.74 0 -22.57">
+      </a-collada-model>
+
+      <a-collada-model
+        id="cherry-blossom-tree"
+        src="../assets/3D/treeCherryBlossom.dae"
+        position="24.01 16.31 -25.17">
+      </a-collada-model>
+
+      <a-collada-model
+        id="cloud-1"
+        src="../assets/3D/cloudLight.dae"
+        position="-1.76 21.10 -33.23"
+        rotation="0 -24.64 0">
+      </a-collada-model>
+
+      <a-collada-model
+        id="cloud-2"
+        src="../assets/3D/cloudLight.dae"
+        position="0 24.61 -45.51"
+        rotation="0 55.58 0">
+      </a-collada-model>
+
+      <a-collada-model
+        id="cloud-3"
+        src="../assets/3D/cloudLight.dae"
+        position="12.35 19.85 17.95"
+        rotation="0 34.95 0">
+      </a-collada-model>
+
+      <a-collada-model
+        id="cloud-4"
+        src="../assets/3D/cloudLight.dae"
+        position="26.37 21.29 -39.75"
+        rotation="0 0 0">
+      </a-collada-model>
+
+      <!-- Mountain Volcanos -->
+      <a-collada-model
+        id="mountain-volcano-1"
+        src="../assets/3D/mountainVolcano.dae"
+        position="-33.96 0 34.25"
+        rotation="0 39.53 0">
+      </a-collada-model>
+
+      <a-collada-model
+        id="mountain-volcano-2"
+        src="../assets/3D/mountainVolcano.dae"
+        position="-2.27 0 49.32"
+        rotation="0 107.14 0">
+      </a-collada-model>
+
+      <a-collada-model
+        id="bluff-grass"
+        src="../assets/3D/bluffGrass.dae"
+        position="20.84 0 -30.86"
+        rotation="0 -17.19 0">
+      </a-collada-model>
+
+      <a-collada-model
+        id="grass-hill-1"
+        src="../assets/3D/grassHill.dae"
+        position="-14.48 0 -27.82"
+        rotation="0 -13.75 0">
+      </a-collada-model>
+
+      <a-collada-model
+        id="grass-hill-2"
+        src="../assets/3D/grassHill.dae"
+        position="41.80 0 -22.18"
+        rotation="0 -124.90 0">
+      </a-collada-model>
+
+      <a-collada-model
+        id="stone-bridge"
+        src="../assets/3D/stoneBridge.dae"
+        position="-13.90 0 43.74"
+        rotation="0 76.78 0">
+      </a-collada-model>
+
+      <a-collada-model
+        id="zebu-1"
+        src="../assets/3D/animalZebu.dae"
+        position="-8.16 0 23.85"
+        rotation="0 -21.20 0">
+      </a-collada-model>
+
+      <a-camera position="0 0 5"></a-camera>
+    </a-scene>
+
+</body>
+</html>

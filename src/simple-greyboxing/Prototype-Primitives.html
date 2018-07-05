@@ -1,0 +1,192 @@
+<html>
+
+<head>
+  <title>Distance and Placement in 3D Space</title>
+</head>
+
+<body>
+  <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+
+  <!-- Concepts Covered
+        1. Importing external 3D models
+        2. Translation
+        3. Rotation
+        4. Creating multiple instances (this can be shortened -
+            have same scene with reusable components)
+        5. Sky & Terrain
+        6. Camera
+        7. Spotlight
+        8. Sky texture
+  -->
+
+  <body>
+    <a-scene>
+      <a-entity id="outdoors">
+        <a-plane id="grass-terrain"
+          height="200"
+          width="200"
+          color="#CCCCCC"
+          position="0 -0.01 0"
+          rotation="-90 0 0">
+        </a-plane>
+
+      <a-sky color="#CCCCCC"></a-sky>
+
+      <a-box
+        color="#CCCCCC"
+        width="1"
+        depth="1"
+        height="5.8"
+        position="-29.47 2.8 -10.02">
+      </a-box>
+
+      <a-box
+        color="#CCCCCC"
+        width="1"
+        depth="1"
+        height="5.8"
+        position="-21.56 2.8 -10.82">
+      </a-box>
+
+      <a-box
+        color="#CCCCCC"
+        width="1"
+        depth="1"
+        height="5.8"
+        position="6.83 2.8 -24.76">
+      </a-box>
+
+      <a-box
+        color="#CCCCCC"
+        width="1"
+        depth="1"
+        height="5.8"
+        position="11.74 2.8 -22.57">
+      </a-box>
+
+      <a-cone
+        color="#CCCCCC"
+        radius-bottom="0.5"
+        radius-top="4"
+        height="5"
+        position="24.01 19 -25.17">
+      </a-cone>
+
+      <a-sphere
+        color="#CCCCCC"
+        radius="1"
+        position="-1.76 21.10 -33.23"
+        scale="1.66 1.16 1.66">
+      </a-sphere>
+
+      <a-sphere
+        color="#CCCCCC"
+        radius="1"
+        position="0 24.61 -45.51"
+        scale="1.66 1.16 1.66">
+      </a-sphere>
+
+      <a-sphere
+        color="#CCCCCC"
+        radius="1"
+        position="12.35 19.85 17.95"
+        scale="1.66 1.16 1.66">
+      </a-sphere>
+
+      <a-sphere
+        color="#CCCCCC"
+        radius="1"
+        position="26.37 21.29 -39.75"
+        scale="1.66 1.16 1.66">
+      </a-sphere>
+
+      <!-- Mountain Volcanos -->
+      <a-box
+        id="mountain-volcano-1"
+        color="#CCCCCC"
+        width="15"
+        depth="15"
+        height="20"
+        position="-30.75 7.13 34.25"
+        scale="1.0 0.71 1.0">
+      </a-box>
+
+      <a-box
+        id="mountain-volcano-2"
+        color="#CCCCCC"
+        width="15"
+        depth="15"
+        height="20"
+        position="1.70 7.13 49.32"
+        rotation="0 53.29 0"
+        scale="1.0 0.71 1.0">
+      </a-box>
+
+      <a-cone
+        color="#CCCCCC"
+        radius-bottom="10"
+        radius-top="10"
+        height="16"
+        position="20.84 8 -30.86">
+      </a-cone>
+
+      <a-entity id="grass-hill-group1">
+        <a-sphere
+          color="#CCCCCC"
+          radius="7"
+          theta-start="0"
+          theta-length="90"
+          position="-21.42 0.22 -22.01">
+        </a-sphere>
+        <a-sphere
+          color="#CCCCCC"
+          radius="11"
+          theta-start="0"
+          theta-length="90"
+          position="-9.55 0.22 -30.38">
+        </a-sphere>
+      </a-entity>
+
+      <a-entity id="grass-hill-group2"
+        position="11.36 0 -16.89"
+        rotation="0 -109.43 0">
+        <a-sphere
+          color="#CCCCCC"
+          radius="7"
+          theta-start="0"
+          theta-length="90"
+          position="-21.42 0.22 -22.01">
+        </a-sphere>
+        <a-sphere
+          color="#CCCCCC"
+          radius="11"
+          theta-start="0"
+          theta-length="90"
+          position="-9.55 0.22 -30.38">
+        </a-sphere>
+      </a-entity>
+
+      <a-box
+        color="#CCCCCC"
+        width="10"
+        depth="10"
+        height="4"
+        position="-13.90 2 43.74"
+        rotation="0 -12.61 0"
+        scale="0.52 1.67 2.17">
+      </a-box>
+
+      <a-box
+        color="#9A8572"
+        width="0.8"
+        depth="2.2"
+        height="2"
+        position="-8.16 1 23.85"
+        rotation="0 -10.89 0">
+      </a-box>
+
+      <a-camera position="0 0 5"></a-camera>
+    </a-scene>
+
+</body>
+</html>

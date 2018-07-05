@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>Primitives</title>
+</head>
+
+<body>
+  <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+
+  <!--
+  Spend some time playing with properties of geometry and shape primitives.
+  For more information, check out the documentation:
+  https://aframe.io/docs/0.5.0/introduction/html-and-primitives.html
+
+  These shapes can be very useful for prototyping rough shapes and
+  layouts very quickly.
+
+  Also in this example, I used the Layout Component which makes it much eaiser
+  to lay out child entities.
+
+  https://aframe.io/docs/0.8.0/guides/building-a-360-image-gallery.html#layout-component
+  -->
+  <a-scene>
+    <a-entity position="0 0 -10">
+      <a-entity id="3d-geometries"
+        position="-12 1 0"
+        layout="layout: line; margin: 3">
+        <a-box></a-box>
+        <a-sphere></a-sphere>
+        <a-cone></a-cone>
+        <a-cylinder></a-cylinder>
+        <a-dodecahedron></a-dodecahedron>
+        <a-isocahedron></a-isocahedron>
+        <a-octahedron></a-octahedron>
+        <a-tetrahedron></a-tetrahedron>
+        <a-torus-knot></a-torus-knot>
+        <a-torus></a-torus>
+      </a-entity>
+    </a-entity>
+
+    <!--
+    Bonus: what happens when you change the light properties?
+    https://aframe.io/docs/0.8.0/primitives/a-light.html
+    -->
+    <a-light color="green" type="ambient"/>
+  </a-scene>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<html>
+
+<head>
+  <title>Distance and Placement in 3D Space</title>
+</head>
+
+<body>
+  <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+
+  <!--
+      This is the storyboard template translated to the 3D space.
+      The default camera position (where the eyes rest) is at 1.6meters which
+      will put the user height to around 1.7meters.
+
+      Since putting the planes that define the zones at 0 will be too low to
+      actually see the zones, you will have to move it up to your eye level or
+      a bit lower to get a feel for the space.
+
+      The plane is currently parented to the camera object so to move the
+      Y axis position, calculate backwards from the camera position whic is
+      at 1.6 meters.
+  -->
+    <a-scene>
+        <!--
+              Camera and Spatial Zone Setup
+              This is for visualization purposes and to get a feel for
+              3D space and placement of objects
+        -->
+
+        <a-entity id="storyboard-template" position="0 0 0">
+          <a-camera position="0 1.7 0"></a-camera>
+            <a-ring id="0.5-2"
+              radius-inner="0.5"
+              radius-outer="2"
+              rotation="-90 0 0"
+              position="0 0 0"
+              material="color: #C7C7C7">
+            </a-ring>
+            <a-ring id="2-3"
+              radius-inner="2"
+              radius-outer="3"
+              rotation="-90 0 0"
+              position="0 0 0"
+              material="color: #CCCCCC">
+            </a-ring>
+            <a-ring id="3-20"
+              radius-inner="3"
+              radius-outer="20"
+              rotation="-90 0 0"
+              position="0 0 0"
+              material="color: #D8D8D8">
+            </a-ring>
+        </a-entity>
+
+        <!--
+              Test Object Placement Here
+              Below, you can play with object placement in the 3D space and
+              it affects your visual field.
+
+              Try moving the chair from a distance of -0.5 to -20meters.
+              How would you move the chair distance from your camera position
+              and also put the chair in the visual field?
+        -->
+
+        <!-- <a-collada-model
+            id="bounce-chair"
+            src="../assets/3D/bounceChair.dae"
+            position="0 0 0">
+        </a-collada-model> -->
+
+        <!--
+              Now, move the planes down and try placing the human and the
+              chair in different positions and play around with scale of the
+              objects. How does it effect your experience?
+        -->
+
+        <!-- Using primitives -->
+        <!-- <a-box
+            id="bounce-chair"
+            color="blue"
+            width="0.5"
+            height="0.8"
+            depth="0.3"
+            position="0.5 0.4 -2.5">
+        </a-box>
+
+        <a-box
+            id="generic-male-170cm"
+            color="#C7C7C7"
+            width="0.5"
+            height="1.7"
+            depth="0.3"
+            position="-0.5 0.75 -2.5">
+        </a-box> -->
+
+        <!-- Using imported objects -->
+        <a-collada-model
+            id="bounce-chair"
+            src="/assets/distance-3dspace/3D/model.dae"
+            position="0.5 0 -1.5"
+            scale="1.2 1.2 1.2">
+        </a-collada-model>
+
+        <a-collada-model
+            id="generic-male-170cm"
+            src="/assets/distance-3dspace/3D/maleGeneric.dae"
+            position="-0.5 0 -1.5"
+            scale="1.2 1.2 1.2">
+        </a-collada-model>
+
+        <!-- Playing with Scale -->
+        <!-- <a-collada-model
+            id="bounce-chair"
+            src="/assets/distance-3dspace/3D/model.dae"
+            position="0.5 0 -2.5"
+            scale="2 2 2">
+        </a-collada-model>
+
+        <a-collada-model
+            id="generic-male-170cm"
+            src="/assets/distance-3dspace/3D/maleGeneric.dae"
+            position="-0.5 0 -2.5"
+            scale="0.3 0.3 0.3">
+        </a-collada-model> -->
+    </a-scene>
+
+</body>
+</html>

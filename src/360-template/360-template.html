@@ -1,0 +1,57 @@
+
+<html>
+  <head>
+    <title>360 Storyboard Template</title>
+  </head>
+  <body>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-event-set-component/master/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-layout-component/master/dist/aframe-layout-component.min.js"></script>
+    <script src="/components/storyboard.js"></script>
+
+    <a-scene storyboard="showNavigation: true">
+
+      <!-- place your storyboard assets here -->
+      <a-assets>
+        <img id="photo1" src="/assets/360webimages/bianco-trash-360panorama.jpg"/>
+        <img id="photo2" src="/assets/360webimages/example-1.jpg"/>
+        <img id="photo3" src="/assets/360webimages/Sladmore05-Panorama_360.jpg"/>
+        <!-- <img id="4" src="/assets/"/>
+        <img id="5" src="/assets/"/>
+        <img id="6" src="/assets/"/>
+        <video id="7" src="/assets/" autoplay loop="true" crossorigin></video> -->
+      </a-assets>
+
+      <a-entity id="frame-1" storyboard-frame>
+       <a-sky src="#photo1" rotation="0 -80 0" ></a-sky>
+          <a-plane link-to-frame="frame-2" rotation="0 -90 0" height="30" width="60" color="white" opacity="0" position="3270 10 700" scale="20 20 20" class="clickable">
+          </a-plane>
+      </a-entity>
+
+      <a-entity id="frame-2" storyboard-frame>
+       <a-sky src="#photo2" rotation="0 -80 0" ></a-sky>
+       <a-plane link-to-frame="frame-3" rotation="0 170 0" height="200" width="140" color="white" opacity="0" position="40 -30 360" class="clickable"></a-plane>
+      </a-entity>
+
+      <a-entity id="frame-3" storyboard-frame>
+        <a-sky src="#photo3" rotation="0 75 0"></a-sky>
+      </a-entity>
+
+      <!-- <a-entity id="frame-4" storyboard-frame>
+        <a-sky src="#" rotation="0 75 0"></a-sky>
+        <a-plane link-to-frame="frame-5" rotation="0 80 0" height="40" width="35" color="white" opacity="0" position="-70 -5 -10" class="clickable"></a-plane>
+      </a-entity> -->
+
+      <!-- <a-entity id="frame-5" storyboard-frame>
+        <a-sky src="#" rotation="0 75 0"></a-sky>
+        <a-plane link-to-frame="frame-6" rotation="0 80 0" height="40" width="35" color="white" opacity="0" position="-70 -5 -10" class="clickable"></a-plane>
+      </a-entity> -->
+
+      <!-- <a-entity id="frame-6" storyboard-frame>
+        <a-videosphere src="#" rotation="0 270 0"></a-videosphere>
+        <a-text align="center" value="Welcome!" position="175 45 118" rotation="0 -90 0" scale="50 50 50"></a-text>
+      </a-entity> -->
+
+    </a-scene>
+  </body>
+</html>

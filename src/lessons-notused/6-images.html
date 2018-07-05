@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <title>Lesson 6: Images</title>
+</head>
+
+<body>
+  <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+  <!--
+    The image and video components are very easy to use:
+    https://aframe.io/docs/0.4.0/primitives/a-image.html
+    https://aframe.io/docs/0.4.0/primitives/a-video.html
+    Try adjust the shapes of them to fix the aspect ratios.
+    It may help to check the dimensions of the source files.
+  -->
+  <a-scene>
+      <!-- <a-curvedimage src="assets/cage.jpg"></a-curvedimage> -->
+      <a-image position="1 2 -2" src="../assets/cage.jpg"></a-image>
+      <a-video position="-1 2 -2" src="../assets/aframe-logo.mp4"></a-video>
+  </a-scene>
+
+</body>
+</html>

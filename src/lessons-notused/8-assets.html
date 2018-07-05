@@ -1,0 +1,20 @@
+<html>
+
+<head>
+  <title>Lesson 8: Assets</title>
+</head>
+
+<body>
+  <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+  <a-scene>
+      <a-assets>
+        <img id="cage-image" src="/assets/cage.jpg"/>
+        <img id="aframe-logo-video" src="/assets/aframe-logo.mp4"/>
+      </a-assets>
+      <!-- <a-curvedimage src="assets/cage.jpg"></a-curvedimage> -->
+      <a-image position="1 2 -2" src="#cage-image"></a-image>
+      <a-video position="-1 2 -2" src="#aframe-logo-video"></a-video>
+  </a-scene>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<html>
+
+<head>
+  <title>Prototyping: Greyboxing</title>
+</head>
+
+  <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+  <!--
+        In this scene layout, we are using a technique called grey boxing to
+        block out the 3D space from the storyboard.
+
+        It is using all the concepts from Week 2 - primitives, rotation,
+        grouping, scale & translation as well as color attributes. All the
+        primitive sizes are pretty much to scale.
+
+        Each object is tagged with an ID so that it is easier to swap them
+        out later with the 3D models.
+  -->
+
+  <body>
+    <a-scene>
+
+      <!-- Main camera -->
+      <a-entity id="main-camera"
+        position="0 0 0">
+        <a-camera></a-camera>
+      </a-entity>
+
+      <a-entity id="outdoors">
+        <a-plane id="grass-terrain"
+          height="200"
+          width="200"
+          color="#CCCCCC"
+          position="0 -0.01 0"
+          rotation="-90 0 0">
+        </a-plane>
+
+      <a-sky color="#CCCCCC"></a-sky>
+
+      <!-- Mountain Volcanos -->
+      <a-box
+        id="mountain-volcano-1"
+        color="#CCCCCC"
+        width="15"
+        depth="22"
+        height="22"
+        position="-9.21 7 -36.31"
+        rotation="0 5.16 0"
+        scale="1.0 1.0 1.0">
+      </a-box>
+
+      <a-box
+        id="mountain-volcano-2"
+        color="#CCCCCC"
+        width="15"
+        depth="22"
+        height="22"
+        position="18.89 7 -31.28"
+        rotation="0 155.27 0"
+        scale="1.0 1.0 1.0">
+      </a-box>
+
+      <!-- Lost Zebu -->
+      <a-box
+        id="zebu-1"
+        color="#9A8572"
+        width="0.5"
+        depth="2.1"
+        height="1.6"
+        position="1.39 0.58 -14.83"
+        rotation="0 -13.75 0">
+      </a-box>
+
+      <!--  Grass Hills
+            The grass hills are hemispheres. To create hemispheres, we need
+            to define the theta start to 0 and the end to 90. 180 is the
+            full sphere.
+
+            https://aframe.io/docs/0.4.0/primitives/a-sphere.html
+      -->
+      <a-sphere
+        id="grass-hill-1"
+        color="#CCCCCC"
+        radius="8"
+        theta-start="0"
+        theta-length="90"
+        position="-36.24 0 19.19"
+        scale="1 0.8 1">
+      </a-sphere>
+
+      <a-sphere
+        id="grass-hill-2"
+        color="#CCCCCC"
+        radius="8"
+        theta-start="0"
+        theta-length="90"
+        position="6.64 0 29.78"
+        scale="1 0.8 1">
+      </a-sphere>
+
+      <!-- Zebu Herd -->
+      <a-box
+        id="zebu-2"
+        color="#9A8572"
+        width="0.5"
+        depth="2.1"
+        height="1.6"
+        position="-10.71 0.58 21.03"
+        rotation="0 -32.66 0">
+      </a-box>
+
+      <a-box
+        id="zebu-3"
+        color="#9A8572"
+        width="0.5"
+        depth="2.1"
+        height="1.6"
+        position="-8.64 0.58 21.52"
+        rotation="0 -34.95 0">
+      </a-box>
+
+      <a-box
+        id="zebu-4"
+        color="#9A8572"
+        width="0.5"
+        depth="2.1"
+        height="1.6"
+        position="-11.03 0.58 17.65"
+        rotation="0 -40.11 0">
+      </a-box>
+
+      <a-box
+        id="zebu-5"
+        color="#9A8572"
+        width="0.5"
+        depth="2.1"
+        height="1.6"
+        position="-14.81 0.58 20.24"
+        rotation="0 -32.09 0">
+      </a-box>
+
+      <a-box
+        id="zebu-6"
+        color="#9A8572"
+        width="0.5"
+        depth="2.1"
+        height="1.6"
+        position="-16.15 0.58 17.97"
+        rotation="0 -41.83 0">
+      </a-box>
+
+      <!-- Trees -->
+      <a-box
+        id="tree-1"
+        color="#CCCCCC"
+        width="1"
+        depth="1"
+        height="5.8"
+        position="-26.76 2.8 -17.77">
+      </a-box>
+
+      <a-box
+        id="tree-2"
+        color="#CCCCCC"
+        width="1"
+        depth="1"
+        height="5.8"
+        position="-32.17 2.8 -10.82">
+      </a-box>
+
+      <!-- Clouds -->
+      <a-sphere
+        id="cloud-1"
+        color="#CCCCCC"
+        radius="1"
+        position="-35.03 20.46 13.05"
+        scale="1.66 1.16 1.66">
+      </a-sphere>
+
+      <a-sphere
+        id="cloud-2"
+        color="#CCCCCC"
+        radius="1"
+        position="7.48 20.46 -34.33"
+        scale="1.66 1.16 1.66">
+      </a-sphere>
+
+      <a-sphere
+        id="cloud-3"
+        color="#CCCCCC"
+        radius="1"
+        position="-43.11 22 -34.33"
+        scale="1.66 1.16 1.66">
+      </a-sphere>
+    </a-scene>
+
+  </body>
+  </html>

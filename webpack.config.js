@@ -28,13 +28,6 @@ module.exports = {
       filename: 'lessons/1-coordinates.html'
     }),
     new HtmlWebpackPlugin({
-      title: 'Meters',
-      myPageHeader: 'meters',
-      template: './src/lessons-notused/2-meters.html',
-      inject: 'head',
-      filename: 'lessons-notused/2-meters.html'
-    }),
-    new HtmlWebpackPlugin({
       title: 'Rotation',
       myPageHeader: 'rotation',
       template: './src/lessons/2-rotation.html',
@@ -56,39 +49,11 @@ module.exports = {
       filename: 'lessons/3-sky.html'
     }),
     new HtmlWebpackPlugin({
-      title: 'Images',
-      myPageHeader: 'images',
-      template: './src/lessons-notused/6-images.html',
-      inject: 'head',
-      filename: 'lessons-notused/6-images.html'
-    }),
-    new HtmlWebpackPlugin({
       title: 'Materials',
       myPageHeader: 'materials',
       template: './src/lessons/5-materials.html',
       inject: 'head',
       filename: 'lessons/5-materials.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Assets',
-      myPageHeader: 'assets',
-      template: './src/lessons-notused/8-assets.html',
-      inject: 'head',
-      filename: 'lessons-notused/8-assets.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Text',
-      myPageHeader: 'text',
-      template: './src/lessons-notused/9-text.html',
-      inject: 'head',
-      filename: 'lessons-notused/9-text.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Layout',
-      myPageHeader: 'layout',
-      template: './src/lessons-notused/10-layout.html',
-      inject: 'head',
-      filename: 'lessons-notused/10-layout.html'
     }),
     new HtmlWebpackPlugin({
       title: 'Story board template',
@@ -159,83 +124,6 @@ module.exports = {
       template: './src/lessons/perspective.html',
       inject: 'head',
       filename: 'lessons/perspective.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: '01 greyboxing',
-      myPageHeader: '01-greyboxing',
-      template: './src/greybox-prototyping/01-greyboxing.html',
-      inject: 'head',
-      filename: 'greybox-prototyping/01-greyboxing.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: '02 importing models',
-      myPageHeader: '02-importing-models',
-      template: './src/greybox-prototyping/02-importing-models.html',
-      inject: 'head',
-      filename: 'greybox-prototyping/02-importing-models.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: '03 adding lights',
-      myPageHeader: '03-adding-lights',
-      template: './src/greybox-prototyping/03-adding-lights.html',
-      inject: 'head',
-      filename: 'greybox-prototyping/03-adding-lights.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: '04 adding skytexture',
-      myPageHeader: '04-adding-skytexture',
-      template: './src/greybox-prototyping/04-adding-skytexture.html',
-      inject: 'head',
-      filename: 'greybox-prototyping/04-adding-skytexture.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'index',
-      myPageHeader: 'index',
-      template: './src/simple-greyboxing/index.html',
-      inject: 'head',
-      filename: 'simple-greyboxing/index.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Nature 01',
-      myPageHeader: 'Nature-01',
-      template: './src/simple-greyboxing/Nature-01.html',
-      inject: 'head',
-      filename: 'gsimple-greyboxing/Nature-01.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Nature 02',
-      myPageHeader: 'Nature-02',
-      template: './src/simple-greyboxing/Nature-02.html',
-      inject: 'head',
-      filename: 'simple-greyboxing/Nature-02.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Nature 03',
-      myPageHeader: 'Nature-03',
-      template: './src/simple-greyboxing/Nature-03.html',
-      inject: 'head',
-      filename: 'simple-greyboxing/Nature-03.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Nature Optimized',
-      myPageHeader: 'Nature-Optimized',
-      template: './src/simple-greyboxing/Nature-Optimized.html',
-      inject: 'head',
-      filename: 'simple-greyboxing/Nature-Optimized.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Nature Skytexture',
-      myPageHeader: 'Nature-Skytexture',
-      template: './src/simple-greyboxing/Nature-Skytexture.html',
-      inject: 'head',
-      filename: 'simple-greyboxing/Nature-Skytexture.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Prototype Primitives',
-      myPageHeader: 'Prototype-Primitives',
-      template: './src/simple-greyboxing/Prototype-Primitives.html',
-      inject: 'head',
-      filename: 'simple-greyboxing/Prototype-Primitives.html'
     })
   ],
   devServer: {

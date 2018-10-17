@@ -97,7 +97,7 @@ You can download it here: https://nodejs.org/en/
 - Open the following URL to view running WebVR application
   - For running on your local laptop: http://localhost:8080/
   - You can use your mouse to move the view around to testing
-  - For running on your mobile VR device: http://your-computer-ip-address-from-step-4:8000
+  - For running on your mobile VR device: http://your-computer-ip-address-from-step-4:8080
   - Be sure to click on the goggles icon to put the software in to VR mode.
 
 ## Credits

@@ -26,9 +26,9 @@
     "eslint-loader": "^2.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.0.6",
-    "webpack": "^4.1.1",
+    "webpack": "^4.20.2",
     "webpack-cli": "^2.0.11",
-    "webpack-dev-server": "^3.1.1"
+    "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
     "aframe": "^0.8.2",
@@ -39,7 +39,7 @@
     "aframe-physics-system": "^3.1.1",
     "aframe-teleport-controls": "^0.3.1",
     "aframe-ui-widgets": "^1.0.2",
-    "npm": "^6.0.0",
+    "npm": "^6.4.1",
     "super-hands": "^2.1.0"
   }
 }

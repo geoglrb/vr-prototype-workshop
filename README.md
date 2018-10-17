@@ -37,7 +37,8 @@ You can download it here: https://code.visualstudio.com/download
 
 Check if you need to install node with the following command in your terminal
 
-- `node -v` \* If a version number is returned you have it installed, if not continue on to install node.
+- `node -v` 
+- If a version number is returned you have it installed, if not continue on to install node.
 
 Node is a JavaScript runtime. What is a runtime? It's a piece of software that understands code you write in a specific language – in this case, the language is JavaScript. It powers a lot of websites you visit everyday, and is very easy to set up. You won't need to right anything for Node, but some of the other software we'll install requires it in order to run; for instance a command called NPM (node package manager). NPM allows you to install JavaScript based projects and run execute them on both personal and server based computers.
 
@@ -59,7 +60,7 @@ You can download it here: https://nodejs.org/en/
   - 'ifconfig | grep inet'
   - Look for an ip address with 192.168.x.x number
 
-* or -
+- *or* 
   - `localip`
   - This will return your local ip address
 
@@ -75,29 +76,29 @@ You can download it here: https://nodejs.org/en/
 2.  Unzip and move webvr-workshop-2018-master to your systems Documents folder.
     - For mac: \* `~/Document/webvr-workshop-2018-master`
     - For windows:
-      _ `/cygdrive/c/Users/COMPUTER_NAME/Documents/webvr-workshop-2018-master`
-      _ Replace COMPUTER_NAME with the name of your computer
+      - `/cygdrive/c/Users/COMPUTER_NAME/Documents/webvr-workshop-2018-master`
+      - Replace COMPUTER_NAME with the name of your computer
 3.  Open up your terminal
 4.  Issue the following commands:
     - For mac: \* `cd ~/Documents/webvr-workshop-2018`
     - For windows: \* `/cygdrive/c/Users/COMPUTER_NAME/Documents/webvr-workshop-2018`
     - Issue the following command:
-      _ npm install
-      _ The system will take a while to install.
-      _ If you have a problem please call for assistance
-      _ For windows:
-      _ You may need to issue the following command if you get errors on the initial NPM install
-      _ `npm install webpack-dev-server -g`
+      - npm install
+      - The system will take a while to install.
+      - If you have a problem please call for assistance
+      - For windows:
+      - You may need to issue the following command if you get errors on the initial NPM install
+      - `npm install webpack-dev-server -g`
 5.  After NPM has installed the WebVR boilerplate application you need to run it.
     - Issue the following command in the webvr_boilerplate folder \* `npm run dev`
 
 ### Step 6. Get ready to view the WebVR application on your mobile cardboard VR device
 
 - Open the following URL to view running WebVR application
-  _ For running on your local laptop: http://localhost:8080/
-  _ You can use your mouse to move the view around to testing
-  _ For running on your mobile VR device: http://your-computer-ip-address-from-step-4:8000
-  _ Be sure to click on the goggles icon to put the software in to VR mode.
+  - For running on your local laptop: http://localhost:8080/
+  - You can use your mouse to move the view around to testing
+  - For running on your mobile VR device: http://your-computer-ip-address-from-step-4:8000
+  - Be sure to click on the goggles icon to put the software in to VR mode.
 
 ## Credits
 

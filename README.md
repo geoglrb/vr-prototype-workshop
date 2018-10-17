@@ -52,7 +52,7 @@ You can download it here: https://nodejs.org/en/
   - `node -v`
   - A version number should be returned.
 
-### Step 5. Note your computer local ip address
+### Step 4. Note your computer local ip address
 
 - On mac; open terminal (if it’s not already)
 - Issue one of the following commands:
@@ -69,7 +69,7 @@ You can download it here: https://nodejs.org/en/
   - Note the ip address under the ‘Local Area Connection’
   - It’s usually a 192.168.x.x number or a 10.0.0.x number
 
-### Step 6. Install WebVR boilerplate software
+### Step 5. Install WebVR boilerplate software
 
 1.  Copy the following file to https://github.com/cnewfeldt/webvr-workshop-2018/archive/master.zip from your browser
 2.  Unzip and move webvr-workshop-2018-master to your systems Documents folder.
@@ -91,12 +91,12 @@ You can download it here: https://nodejs.org/en/
 5.  After NPM has installed the WebVR boilerplate application you need to run it.
     - Issue the following command in the webvr_boilerplate folder \* `npm run dev`
 
-### Step 7. Get ready to view the WebVR application on your mobile cardboard VR device
+### Step 6. Get ready to view the WebVR application on your mobile cardboard VR device
 
 - Open the following URL to view running WebVR application
   _ For running on your local laptop: http://localhost:8080/
   _ You can use your mouse to move the view around to testing
-  _ For running on your mobile VR device: http://your-computer-ip-address-from-step-5:8000
+  _ For running on your mobile VR device: http://your-computer-ip-address-from-step-4:8000
   _ Be sure to click on the goggles icon to put the software in to VR mode.
 
 ## Credits

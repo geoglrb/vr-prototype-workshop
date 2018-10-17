@@ -84,14 +84,15 @@ You can download it here: https://nodejs.org/en/
     - For windows: `/cygdrive/c/Users/COMPUTER_NAME/Documents/vr-prototype-workshop`
     - Issue the following command:
       - npm install
-      - The system will take a while to install.
-      - If you have a problem please call for assistance
+        - The system will take a while to install.
+        - If you have a problem please call for assistance
       - For windows:
-      - You may need to issue the following command if you get errors on the initial NPM install
-      - `npm install webpack-dev-server -g`
+        - You may need to issue the following command if you get errors on the initial NPM install
+        - `npm install webpack-dev-server -g`
 5.  After NPM has installed the WebVR boilerplate application you need to run it.
     - Issue the following command in the webvr_boilerplate folder 
     - `npm run dev`
+    - You should see the following message in your terminal/CMD window `｢wds｣: Project is running at http://0.0.0.0:8080/`
 
 ### Step 6. Get ready to view the WebVR application on your mobile cardboard VR device
 

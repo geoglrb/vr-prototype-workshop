@@ -22,37 +22,18 @@ In this first part, we'll get everything set up for you to serve web pages from 
 
 ### Step 1. Install VS code (optional)
 
-This step is optional, only if you have a code editor you fancy. If you don’t please consider installing VS Code.
-
-VS code is a very easy to use and powerful text-editor, specially optimized for web design and development. It is built by Microsoft. It is actively use by web developers the world over and highly supported by Microsoft and it’s free! We will use it for all our in class projects.
+This step is optional, if you have a code editor you favor. If you don’t please consider installing VS Code.
 
 You can download it here: https://code.visualstudio.com/download
 
 ### Step 2. Install a terminal client
 
 - Are you on a Mac or Linux? Great. It's already installed! And it’s called: Terminal.
-- You can find it in your applications folder.
+  - You can find it in your applications folder.
 - Are you on Windows? Use the Command Prompt
-- You can get to the CMD application by selecting Win + R keys on your keyboard. Then, type `cmd`
+  - You can get to the CMD application by selecting `Win + R` keys on your keyboard. Then, type `cmd`
 
-### Step 3. Check for Git and install if it is not present on your system
-
-- In your terminal (mac) issue the following command
-  _ `git --version`
-  _ It should respond with a version number
-  _ If it doesn’t please follow the steps here:
-  _ https://www.atlassian.com/git/tutorials/install-git
-- For windows
-  _ Please install git for windows
-  _ http://git-scm.com/download/win
-  _ Check the box for update
-  _ Select an editor of your choice (VS Code recommended)
-  _ Select ‘Use Git and optional Unix tools from the Windows Command Prompt’
-  _ Select next for all other steps until you get to the install button
-  _ Then install
-  _ When install is complete, select the ‘Launch Git Bash’ checkbox and select `Finish` \* Now set up your git
-
-### Step 4. Install Node
+### Step 3. Install Node
 
 Check if you need to install node with the following command in your terminal
 
@@ -68,25 +49,25 @@ You can download it here: https://nodejs.org/en/
 - Open the folder you designed for your downloads, file the system appropriate file (pkg or exe) and double click the file to install Node and it’s helper applications
 - You may need to restart your terminal application after installing
 - Confirm the install with the following command
-  _ `node -v`
-  _ A version number should be returned.
+  - `node -v`
+  - A version number should be returned.
 
 ### Step 5. Note your computer local ip address
 
 - On mac; open terminal (if it’s not already)
 - Issue one of the following commands:
-  _ 'ifconfig | grep inet'
-  _ Look for an ip address with 192.168.x.x number
+  - 'ifconfig | grep inet'
+  - Look for an ip address with 192.168.x.x number
 
 * or -
-  _ `localip`
-  _ This will return your local ip address
+  - `localip`
+  - This will return your local ip address
 
 - On windows; open cygwin
-  _ Issue the following command
-  _ `ipconfig`
-  _ Note the ip address under the ‘Local Area Connection’
-  _ It’s usually a 192.168.x.x number
+  - Issue the following command
+  - `ipconfig`
+  - Note the ip address under the ‘Local Area Connection’
+  - It’s usually a 192.168.x.x number or a 10.0.0.x number
 
 ### Step 6. Install WebVR boilerplate software
 
@@ -117,33 +98,6 @@ You can download it here: https://nodejs.org/en/
   _ You can use your mouse to move the view around to testing
   _ For running on your mobile VR device: http://your-computer-ip-address-from-step-5:8000
   _ Be sure to click on the goggles icon to put the software in to VR mode.
-
-### Step 8: deploying to an external web address.
-
-- Please review the ## Deploying section in the README.md file from the github source
-
-### Other
-
-Some urls of interest if you would like to dive deeper; the base of our course is derived from the following repo \* Webvr boilerplate: https://github.com/ianpetrarca/webvr_boilerplate
-
----
-
-Adding new files for compilation
-
-1.  Open webpack.config.js
-2.  Add new html files: follow same convention
-
-```
-	new HtmlWebpackPlugin({
-      	title: TITLE OF YOUR TEMPLATE
-      	myPageHeader: TITLE OF YOUR TEMPLATE
-    		template: 'TEMPLATE PATH'
-      	inject: 'head'
-      	filename: 'TEMPLATE PATH AT ROOT OF TEMPLATES'
-    	})
-```
-
-Stop and run compiler: npm run dev
 
 ## Credits
 

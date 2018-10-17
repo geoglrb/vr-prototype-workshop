@@ -44,13 +44,14 @@ Check if you need to install node with the following command in your terminal
 You can download it here: https://nodejs.org/en/
 
 - Download the link with the subtitle "Recommended For Most Users".
+  - *note* do not install the latest features current version, it will not work with this code. 
 - For the Mac a .pkg file for you to install
 - For windows, an .exe file will be downloaded for you to install
 - Open the folder you designed for your downloads, file the system appropriate file (pkg or exe) and double click the file to install Node and it’s helper applications
 - You may need to restart your terminal application after installing
 - Confirm the install with the following CLI command:
   - `node -v`
-  - A version number should be returned.
+  - A version number of at least 8.12.0 should be returned.
 
 ### Step 4. Note your computer local ip address
 

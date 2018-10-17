@@ -92,7 +92,8 @@ You can download it here: https://nodejs.org/en/
 5.  After NPM has installed the WebVR boilerplate application you need to run it.
     - Issue the following command in the webvr_boilerplate folder 
     - `npm run dev`
-    - You should see the following message in your terminal/CMD window `｢wds｣: Project is running at http://0.0.0.0:8080/`
+    - You should see the following message in your terminal/CMD window:
+      - `｢wds｣: Project is running at http://0.0.0.0:8080/`
 
 ### Step 6. Get ready to view the WebVR application on your mobile cardboard VR device
 
